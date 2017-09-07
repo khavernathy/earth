@@ -1,3 +1,6 @@
+// make a color-gradient map of pinellas county area
+// red = 0m elevation ---> white = 30m elevation (and up)
+
 Map.setCenter(-82.55950927734375,28.00167680740309, 11);
 var elev = ee.Image('srtm90_v4');
 var cover = ee.Image('MCD12Q1/MCD12Q1_005_2001_01_01')
