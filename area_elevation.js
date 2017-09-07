@@ -11,7 +11,9 @@ colors.push("ff4c4c"); colors.push("ff6666"); colors.push("ff7f7f");
 colors.push("ff9999"); colors.push("ffb2b2"); colors.push("ffcccc");
 colors.push("ffe5e5"); colors.push("ffffff");
 var count = 0;
-for (var x = 0; x <= 1000; x+=100) {
+var peak = 30; // meters
+var inc = 3; // meters, incrememnt
+for (var x = 0; x <= peak; x+=inc) {
     print(colors[count]);
     output = blank.where(elev.gt(x), 1);
     result = output.updateMask(output);
